@@ -1,0 +1,6 @@
+- name: pinging the server in play level
+  hosts: web
+  become: no
+  tasks:
+  - name: Pinging the server in task level
+    ansible.builtin.ping:
