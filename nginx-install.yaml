@@ -1,0 +1,11 @@
+- name: Install nginx playleve
+  hosts: web 
+  become: yes
+  tasks:
+  - name: install nginx
+    #dnf install nginx -y 
+    ansible.builtin.dnf: 
+      name: nginx
+      state: latest
+
+      
