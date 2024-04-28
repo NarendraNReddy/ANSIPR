@@ -1,0 +1,7 @@
+- name: variables
+  hosts: localhost
+  become: no
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "Devops Siva 120 hours"
