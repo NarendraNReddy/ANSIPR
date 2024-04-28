@@ -9,9 +9,10 @@
       state: latest
   - name: start nginx #systemctl start nginx
     ansible.builtin.service:
-      name: nginx 
+      name: nginx
       state: started
-      enable: yes    
+      enabled: true
+   
 
 
 
