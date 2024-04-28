@@ -2,9 +2,20 @@
   hosts: localhost
   become: no
   tasks:
-  - name: Running Play 2 Task 2
+  - name: Running Play 1 Task 1
     ansible.builtin.debug:
       msg: "Play 1 Task1"
   - name: Play 1 Task 2
     ansible.builtin.debug:
-      msg: "Play 1 Task 2"    
+      msg: "Play 1 Task 2"   
+       
+- name: Running Play 2 Task 1
+  hosts: localhost
+  become: no 
+  tasks:
+  - name: Running Play 2  Task 1
+    ansible.builtin.debug:
+      msg: "Play 2 Task 1"     
+  - name: Running Play 2  Task 2
+    ansible.builtin.debug:
+      msg: "Play 2 Task 2"         
