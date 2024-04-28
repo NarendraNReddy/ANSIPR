@@ -2,9 +2,9 @@
   hosts: localhost
   become: no
   vars:
-  - Course: Devops
-    Trainer:  Siva
-    Duration: 120 hours
+  - Course: Terraform
+    Trainer:  Sivakumar
+    Duration: 15 hours
   tasks:
   - name: print variables
     ansible.builtin.debug:
