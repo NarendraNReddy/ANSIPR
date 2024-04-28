@@ -1,0 +1,16 @@
+- name: Playlevel
+  hosts:  localhost
+  become: no
+  vars:
+  - Course: Terraform
+    Trainer:  Siva
+    Duration: 120 hours
+  tasks:
+  - name: Tasklevel1 #Overriding
+    vars:
+    - Course: Devops
+    ansible.builtin.debug:
+      msg: "{{Course}} {{Trainer}} {{Duration}}"
+  - name: Tasklevel2   # Inheritance
+    ansible.builtin.debug:
+      msg:  "{{Course}} {{Trainer}} {{Duration}}"    
