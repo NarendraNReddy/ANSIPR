@@ -8,6 +8,7 @@
       name: nginx
       state: latest
   - name: start nginx #systemctl start nginx
+                      #systemctl enabled nginx
     ansible.builtin.service:
       name: nginx
       state: started
