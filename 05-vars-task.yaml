@@ -10,7 +10,7 @@
     vars:
     - Course: Devops
     ansible.builtin.debug:
-      msg: "{{Course}} {{Trainer}} {{Duration}}"
+      msg: "Override:::::{{Course}} {{Trainer}} {{Duration}}"
   - name: Tasklevel2   # Inheritance
     ansible.builtin.debug:
-      msg:  "{{Course}} {{Trainer}} {{Duration}}"    
+      msg:  "Inheritance::::::{{Course}} {{Trainer}} {{Duration}}"    
