@@ -5,8 +5,8 @@
     Course: "Devops with AWS"
     Tools:
       - Linux
-        AWS
-        Ansible
+      - AWS
+      - Ansible
     Exp:
       Devops: 3
       AWS: 2
