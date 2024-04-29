@@ -4,6 +4,7 @@
   tasks:
   - name: conditions
     ansible.builtin.command: id expense2
+    ignore_erros: true
 
   - name: id expense2 check
     ansible.builtin.debug:
