@@ -10,7 +10,7 @@
     prompt: "Enter wishes as prompt GM wishes"
     private: no 
   tasks:
-  - name: var pref check
+  - name: vars with pref 
     vars:
     - WISHES: "Tasklevel GM wishes"
   - WISHES:
