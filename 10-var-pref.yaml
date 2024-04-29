@@ -10,8 +10,10 @@
     prompt: "Enter prompt wishes as ::: from prompt level GM wishes"
   tasks:
   - name: var pref check
+    vars:
+    - WISHES: "From task level GM wishes"
     ansible.builtin.debug:
-      msg: "var pref check"
+      msg: "::::{{WISHES}}"
 
 
 
