@@ -11,8 +11,8 @@
     private: no
   tasks:
   - name: var pref check
-    vars:
-    - WISHES: "From task level GM wishes"
+    # vars:
+    # - WISHES: "From task level GM wishes"
     ansible.builtin.debug:
       msg: "::::{{WISHES}}"
 
