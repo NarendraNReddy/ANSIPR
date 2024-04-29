@@ -13,7 +13,7 @@
 
   - name: user info catch
     ansible.builtin.command: useradd expense2
-    when: {{USER.rc}} != 0    
+    when: USER.rc != 0  
 
 
   - name: id expense2 check
