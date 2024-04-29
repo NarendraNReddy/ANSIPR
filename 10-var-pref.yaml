@@ -1,6 +1,10 @@
 - name: var pref check
   hosts: localhost
   become: no 
+  vars:
+  - WISHES: "from play level GM wishes"
+  vars_files:
+  - var.yaml 
   tasks:
   - name: var pref check
     ansible.builtin.debug:
