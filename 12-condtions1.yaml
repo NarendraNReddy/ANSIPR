@@ -1,0 +1,10 @@
+- name: conditions
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: conditions
+    ansible.builtin.command: id expense2
+
+  - name: id expense2 check
+    ansible.builtin.debug:
+      msg: "hello"  
