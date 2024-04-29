@@ -4,4 +4,4 @@
   tasks:
   - name: vars with .ini
     ansible.builtin.debug:
-      msg: "{{WISHES}}"
+      msg: "{{WISHES}} {{PERSON}}"
