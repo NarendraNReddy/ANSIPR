@@ -1,5 +1,5 @@
 - name: conditions
-  host: localhost
+  hosts: localhost
   become: no
   tasks:
   - name: conditions
