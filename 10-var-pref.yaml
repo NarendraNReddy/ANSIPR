@@ -8,6 +8,7 @@
   vars_prompt:
   - name: WISHES
     prompt: "Enter prompt wishes as ::: from prompt level GM wishes"
+    private: no
   tasks:
   - name: var pref check
     vars:
