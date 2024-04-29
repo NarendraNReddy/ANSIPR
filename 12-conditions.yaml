@@ -1,8 +1,11 @@
 - name: conditions
-  hosts: localhost
+  host: localhost
   become: no
   tasks:
-  - name: NNR
+  - name: conditions
+    ansible.builtin.debug:
+      msg: "Hello"
+
 
 
 
