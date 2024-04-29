@@ -5,8 +5,8 @@
     Course: "Devops with AWS"
     Tools:
       - Linux
-      - AWS
-      - Ansible
+        AWS
+        Ansible
     Exp:
       Devops: 3
       AWS: 2
@@ -16,4 +16,4 @@
   tasks:
   - name: datatypes
     ansible.builtin.debug:
-      msg: "{{Course}} {{Tools}} {{Exp}} {{RealProject}}"
+      msg: "{{Course}}, {{Tools}}, {{Exp}}, {{RealProject}}"
