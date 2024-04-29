@@ -3,8 +3,11 @@
   become: no
   tasks:
   - name: conditions
+    ansible.builtin.command: id expense
+  - name: debug msg
     ansible.builtin.debug:
-      msg: "Hello"
+      msg: "Hello"  
+
 
 
 
