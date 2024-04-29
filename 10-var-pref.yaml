@@ -11,5 +11,7 @@
     private: no
   tasks:
   - name: "var pref check"  
+    ansible.builtin.debug:
+      msg:  {{WISHES}}
 
 
