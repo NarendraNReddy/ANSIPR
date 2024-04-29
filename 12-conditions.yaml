@@ -1,10 +1,5 @@
 - name: conditions
-  hosts: localhost
+  hostname: localhost
   become: no
   tasks:
   - name: conditions
-    ansible.builtin.condition: id expense
-
-  - name: 
-    ansible.builtin.debug:
-      msg: "Hello"  
