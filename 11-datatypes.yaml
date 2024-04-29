@@ -1,0 +1,7 @@
+- name: datatypes
+  hosts: localhost
+  become: no 
+  tasks:
+  - name: datatypes
+    ansible.builtin.debug:
+      msg: "datatypes"
