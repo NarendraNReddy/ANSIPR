@@ -9,7 +9,7 @@
   # - name: WISHES
   #   prompt: "Enter prompt wishes as ::: from prompt level GM wishes"
   #   private: no
-  # tasks:
+  tasks:
   - name: var pref check
     # vars:
     # - WISHES: "From task level GM wishes"
