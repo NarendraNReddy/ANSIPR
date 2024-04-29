@@ -1,0 +1,18 @@
+- name: Var pref check
+  hosts: localhost
+  become: no 
+  vars:
+  - WISHES: "Playlevel GM wishes"
+  vars_files:
+  - var.yaml
+  vars_prompt:
+  - name: WISHES
+    prompt: "Enter wishes as prompt GM wishes"
+    private: no 
+  tasks:
+  - name: var pref check
+    vars:
+    - WISHES: "Tasklevel GM wishes"
+  - WISHES:
+    ansible.builtin.debug:
+      msg: "{{WISHES}}"
